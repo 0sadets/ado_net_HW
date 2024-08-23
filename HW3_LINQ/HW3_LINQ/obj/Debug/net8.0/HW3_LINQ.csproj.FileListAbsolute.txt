@@ -1,0 +1,15 @@
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\bin\Debug\net8.0\HW3_LINQ.exe
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\bin\Debug\net8.0\HW3_LINQ.deps.json
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\bin\Debug\net8.0\HW3_LINQ.runtimeconfig.json
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\bin\Debug\net8.0\HW3_LINQ.dll
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\bin\Debug\net8.0\HW3_LINQ.pdb
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.AssemblyInfoInputs.cache
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.AssemblyInfo.cs
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.csproj.CoreCompileInputs.cache
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.sourcelink.json
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.dll
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\refint\HW3_LINQ.dll
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.pdb
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\HW3_LINQ.genruntimeconfig.cache
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\HW3_LINQ\HW3_LINQ\obj\Debug\net8.0\ref\HW3_LINQ.dll
