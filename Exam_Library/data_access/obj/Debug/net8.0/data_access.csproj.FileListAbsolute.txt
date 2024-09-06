@@ -1,0 +1,15 @@
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\bin\Debug\net8.0\data_access.deps.json
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\bin\Debug\net8.0\data_access.runtimeconfig.json
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\bin\Debug\net8.0\data_access.dll
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\bin\Debug\net8.0\data_access.pdb
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.csproj.AssemblyReference.cache
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.GeneratedMSBuildEditorConfig.editorconfig
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.AssemblyInfoInputs.cache
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.AssemblyInfo.cs
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.csproj.CoreCompileInputs.cache
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.sourcelink.json
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.dll
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\refint\data_access.dll
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.pdb
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\data_access.genruntimeconfig.cache
+D:\Step\ADO.NET\ado_net_HW\ado_net_HW\Exam_Library\data_access\obj\Debug\net8.0\ref\data_access.dll
