@@ -14,6 +14,6 @@ namespace Exam_Library.Entities
         public int ClientId {  get; set; }
         public Client Client { get; set; }
         public DateTime DateOfReservetion { get; set; }
-        public string Status { get; set; }
+        public string Status { get; set; } // active, completed
     }
 }

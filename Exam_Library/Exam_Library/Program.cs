@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exam_Library;
+using System;
 
 namespace ShopDB
 {
@@ -23,6 +24,10 @@ namespace ShopDB
             //{
             //    Console.WriteLine($"{a.Id} {a.Name}");
             //}
+            LibraryDbContext libraryDb = new LibraryDbContext();
+            foreach (var a in libraryDb.Books) {
+                Console.WriteLine($"{a.Id} {a.Name}");
+            }
         }
     }
 }
