@@ -23,6 +23,8 @@ namespace Exam_Library.Helpers
                         Surname = "Kulumyk",
                         Salary = 16000,
                         Position = "Seller",
+                        Login = "Kulumyk",
+                        Password = "123",
                         LibraryId = 1
                     },
                     new Worker()
@@ -32,6 +34,8 @@ namespace Exam_Library.Helpers
                         Surname = "Kvitka",
                         Salary = 26000,
                         Position = "Manager",
+                        Login = "Kvitka",
+                        Password = "123",
                         LibraryId = 1
 
                     },
@@ -42,6 +46,8 @@ namespace Exam_Library.Helpers
                         Surname = "Symonenko",
                         Salary = 20000,
                         Position = "Seller",
+                        Login = "Ivan",
+                        Password = "132",
                         LibraryId = 2
                     },
                     new Worker()
@@ -51,6 +57,8 @@ namespace Exam_Library.Helpers
                         Surname = "Vunograskiy",
                         Salary = 35000,
                         Position = "Director",
+                        Login = "Petro",
+                        Password = "123",
                         LibraryId = 1
                     },
                     new Worker()
@@ -60,6 +68,8 @@ namespace Exam_Library.Helpers
                         Surname = "Socol",
                         Salary = 28000,
                         Position = "Manager",
+                        Login = "Socol",
+                        Password = "123",
                         LibraryId = 2
                     },
                     new Worker()
@@ -69,6 +79,8 @@ namespace Exam_Library.Helpers
                         Surname = "Petlura",
                         Salary = 37000,
                         Position = "Director",
+                        Login = "Andriy",
+                        Password = "123",
                         LibraryId = 1
                     },
                 });
@@ -102,6 +114,8 @@ namespace Exam_Library.Helpers
                         Id = 1,
                         Name = "Turner",
                         Surname = "Winifrede",
+                        Login = "Turner_W",
+                        Password = "123",
                         LibraryId = 1,
                     },
                     new Client()
@@ -109,6 +123,8 @@ namespace Exam_Library.Helpers
                         Id = 2,
                         Name = "Lopez",
                         Surname = "Quintina",
+                        Login = "Lopez",
+                        Password = "123",
                         LibraryId = 1,
                     },
                     new Client()
@@ -116,6 +132,8 @@ namespace Exam_Library.Helpers
                         Id = 3,
                         Name = "White",
                         Surname = "Uda",
+                        Login = "Wuda",
+                        Password = "123",
                         LibraryId = 1,
                     },
                     new Client()
@@ -123,6 +141,8 @@ namespace Exam_Library.Helpers
                         Id = 4,
                         Name = "Sanchez",
                         Surname = "Jonah",
+                        Login = "San_J",
+                        Password = "123",
                         LibraryId = 1,
                     },
                     new Client()
@@ -130,6 +150,8 @@ namespace Exam_Library.Helpers
                         Id = 5,
                         Name = "Thomas",
                         Surname = "Zachery",
+                        Login = "Tom_Z",
+                        Password = "123",
                         LibraryId = 1,
                     },
                     new Client()
@@ -137,6 +159,8 @@ namespace Exam_Library.Helpers
                         Id = 6,
                         Name = "Foster",
                         Surname = "Quartney",
+                        Login = "Foster",
+                        Password = "123",
                         LibraryId = 2,
                     },
                     new Client()
@@ -144,6 +168,8 @@ namespace Exam_Library.Helpers
                         Id = 7,
                         Name = "Perez",
                         Surname = "Felipe",
+                        Login = "Pelipe",
+                        Password = "132",
                         LibraryId = 2,
                     },
                     new Client()
@@ -151,6 +177,8 @@ namespace Exam_Library.Helpers
                         Id = 8,
                         Name = "Jackson",
                         Surname = "Isaias",
+                        Login = "J_Isaias",
+                        Password = "123",
                         LibraryId = 2,
                     },
                     new Client()
@@ -158,6 +186,8 @@ namespace Exam_Library.Helpers
                         Id = 9,
                         Name = "Garcia",
                         Surname = "Faris",
+                        Login = "G_Faris",
+                        Password = "123465789",
                         LibraryId = 2,
                     },
                 });
@@ -184,7 +214,8 @@ namespace Exam_Library.Helpers
                         HasDiscount = false,
                         Status = "Available",
                         Count = 10,
-                        LibraryId = 1
+                        LibraryId = 1,
+                        Rating = 5
 
                     },
                     new Book()
@@ -206,6 +237,7 @@ namespace Exam_Library.Helpers
                         HasDiscount = false,
                         Status = "Available",
                         Count = 10,
+                        Rating = 4,
                         LibraryId = 1
                     },
                     new Book() 
@@ -226,6 +258,7 @@ namespace Exam_Library.Helpers
                         HasDiscount = false,
                         Status = "Reserved",
                         Count = 1,
+                        Rating = 8,
                         LibraryId = 1
 
                     },
@@ -245,6 +278,7 @@ namespace Exam_Library.Helpers
                         HasDiscount = false,
                         Status = "Sold",
                         Count = 0,
+                        Rating = 4,
                         LibraryId = 1
                     },
                     new Book()
@@ -264,6 +298,7 @@ namespace Exam_Library.Helpers
                         HasDiscount = false,
                         Status = "Available",
                         Count = 15,
+                        Rating = 9,
                         LibraryId = 1
                     },
                     new Book() 
@@ -281,6 +316,7 @@ namespace Exam_Library.Helpers
                         IsSequel = false,
                         HasDiscount = false,
                         Status = "Available",
+                        Rating = 6,
                         Count = 8,
                         LibraryId = 1
                     },
@@ -300,6 +336,7 @@ namespace Exam_Library.Helpers
                         IsSequel = false,
                         HasDiscount = false,
                         Status = "Available",
+                        Rating = 5,
                         Count = 9,
                         LibraryId = 2
                     },
@@ -319,6 +356,7 @@ namespace Exam_Library.Helpers
                         IsSequel = false,
                         HasDiscount = true,
                         Status = "Available",
+                        Rating = 3,
                         Count = 10,
                         LibraryId = 2
                     },
@@ -339,6 +377,7 @@ namespace Exam_Library.Helpers
                         IsSequel = false,
                         HasDiscount = false,
                         Status = "Available",
+                        Rating = 9,
                         Count = 12,
                         LibraryId = 2
 
@@ -360,6 +399,7 @@ namespace Exam_Library.Helpers
                         IsSequel = false,
                         HasDiscount = true,
                         Status = "Available",
+                        Rating = 8,
                         Count = 20,
                         LibraryId = 2
 
@@ -380,6 +420,7 @@ namespace Exam_Library.Helpers
                         IsSequel = false,
                         HasDiscount = true,
                         Status = "Available",
+                        Rating = 7,
                         Count = 19,
                         LibraryId = 2
 
@@ -399,6 +440,7 @@ namespace Exam_Library.Helpers
                         IsSequel = false,
                         HasDiscount = true,
                         Status = "Available",
+                        Rating = 8,
                         Count = 17,
                         LibraryId = 2
 
@@ -414,6 +456,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 1,
+                        Rating = 8,
                         Name = "Nora",
                         Lastname = "Sakavic",
                         Country = "USA"
@@ -421,6 +464,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 2,
+                        Rating = 8,
                         Name = "Hilarion",
                         Lastname = "Pavlyuk",
                         Country = "Ukraine"
@@ -428,6 +472,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 3,
+                        Rating = 7,
                         Name = "Erin",
                         Lastname = "Morgenstern",
                         Country = "USA"
@@ -435,6 +480,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 4,
+                        Rating = 5,
                         Name = "V.",
                         Lastname = "Tsybulska",
                         Country = "Ukraine"
@@ -442,6 +488,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 5,
+                        Rating = 7,
                         Name = "Thomas",
                         Lastname = "Mann",
                         Country = "Germany"
@@ -449,6 +496,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 6,
+                        Rating = 9,
                         Name = "Ray",
                         Lastname = "Bradbury",
                         Country = "USA"
@@ -456,6 +504,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 7,
+                        Rating = 8,
                         Name = "Harper",
                         Lastname = "Lee",
                         Country = "USA"
@@ -463,6 +512,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 8,
+                        Rating = 9,
                         Name = "Charlotte",
                         Lastname = "Brontë",
                         Country = "UK"
@@ -470,6 +520,7 @@ namespace Exam_Library.Helpers
                     new Author()
                     {
                         Id = 9,
+                        Rating = 10,
                         Name = "Grigory",
                         Lastname = "Kvitky-Osnovyanenko",
                         Country = "Ukraine"

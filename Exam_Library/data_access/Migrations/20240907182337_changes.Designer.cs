@@ -4,6 +4,7 @@ using Exam_Library;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Exam_Library.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    partial class LibraryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240907182337_changes")]
+    partial class changes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -900,9 +903,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 1,
                             LibraryId = 1,
-                            Login = "Kulumyk",
+                            Login = "Admin",
                             Name = "Sergay",
-                            Password = "123",
+                            Password = "Admin",
                             Position = "Seller",
                             Salary = 16000m,
                             Surname = "Kulumyk"
@@ -911,9 +914,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 2,
                             LibraryId = 1,
-                            Login = "Kvitka",
+                            Login = "Admin",
                             Name = "Olena",
-                            Password = "123",
+                            Password = "Admin",
                             Position = "Manager",
                             Salary = 26000m,
                             Surname = "Kvitka"
@@ -922,9 +925,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 3,
                             LibraryId = 2,
-                            Login = "Ivan",
+                            Login = "Admin",
                             Name = "Ivan",
-                            Password = "132",
+                            Password = "Admin",
                             Position = "Seller",
                             Salary = 20000m,
                             Surname = "Symonenko"
@@ -933,9 +936,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 4,
                             LibraryId = 1,
-                            Login = "Petro",
+                            Login = "Admin",
                             Name = "Petro",
-                            Password = "123",
+                            Password = "Admin",
                             Position = "Director",
                             Salary = 35000m,
                             Surname = "Vunograskiy"
@@ -944,9 +947,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 5,
                             LibraryId = 2,
-                            Login = "Socol",
+                            Login = "Admin",
                             Name = "Sveta",
-                            Password = "123",
+                            Password = "Admin",
                             Position = "Manager",
                             Salary = 28000m,
                             Surname = "Socol"
@@ -955,9 +958,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 6,
                             LibraryId = 1,
-                            Login = "Andriy",
+                            Login = "Admin",
                             Name = "Andriy",
-                            Password = "123",
+                            Password = "Admin",
                             Position = "Director",
                             Salary = 37000m,
                             Surname = "Petlura"

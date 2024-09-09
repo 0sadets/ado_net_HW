@@ -23,6 +23,7 @@ namespace Exam_Library.Entities
         public bool HasDiscount {  get; set; }
         public string Status {  get; set; }// available, sold, reserved
         public int Count {  get; set; }
+        public int Rating {  get; set; }
         public int LibraryId {  get; set; }
         public Library Library { get; set; }
         public ICollection<Reserved> Reserveds { get; set; }

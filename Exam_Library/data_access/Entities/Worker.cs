@@ -14,6 +14,8 @@ namespace Exam_Library.Entities
         public decimal Salary {  get; set; }
         public string Position {  get; set; }
         public int LibraryId {  get; set; }
+        public string Login { get; set; } 
+        public string Password { get; set; } 
         public Library Library { get; set; }
         public ICollection<Sale> Sales { get; set; }
     }

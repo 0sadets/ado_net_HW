@@ -5,7 +5,7 @@
 namespace Exam_Library.Migrations
 {
     /// <inheritdoc />
-    public partial class thirdMigration : Migration
+    public partial class ActionTableChange : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

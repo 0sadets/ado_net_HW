@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Exam_Library.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20240906201555_thirdMigration")]
-    partial class thirdMigration
+    [Migration("20240907195131_workerChange")]
+    partial class workerChange
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -123,6 +123,9 @@ namespace Exam_Library.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Authors");
@@ -133,63 +136,72 @@ namespace Exam_Library.Migrations
                             Id = 1,
                             Country = "USA",
                             Lastname = "Sakavic",
-                            Name = "Nora"
+                            Name = "Nora",
+                            Rating = 8
                         },
                         new
                         {
                             Id = 2,
                             Country = "Ukraine",
                             Lastname = "Pavlyuk",
-                            Name = "Hilarion"
+                            Name = "Hilarion",
+                            Rating = 8
                         },
                         new
                         {
                             Id = 3,
                             Country = "USA",
                             Lastname = "Morgenstern",
-                            Name = "Erin"
+                            Name = "Erin",
+                            Rating = 7
                         },
                         new
                         {
                             Id = 4,
                             Country = "Ukraine",
                             Lastname = "Tsybulska",
-                            Name = "V."
+                            Name = "V.",
+                            Rating = 5
                         },
                         new
                         {
                             Id = 5,
                             Country = "Germany",
                             Lastname = "Mann",
-                            Name = "Thomas"
+                            Name = "Thomas",
+                            Rating = 7
                         },
                         new
                         {
                             Id = 6,
                             Country = "USA",
                             Lastname = "Bradbury",
-                            Name = "Ray"
+                            Name = "Ray",
+                            Rating = 9
                         },
                         new
                         {
                             Id = 7,
                             Country = "USA",
                             Lastname = "Lee",
-                            Name = "Harper"
+                            Name = "Harper",
+                            Rating = 8
                         },
                         new
                         {
                             Id = 8,
                             Country = "UK",
                             Lastname = "Brontë",
-                            Name = "Charlotte"
+                            Name = "Charlotte",
+                            Rating = 9
                         },
                         new
                         {
                             Id = 9,
                             Country = "Ukraine",
                             Lastname = "Kvitky-Osnovyanenko",
-                            Name = "Grigory"
+                            Name = "Grigory",
+                            Rating = 10
                         });
                 });
 
@@ -245,6 +257,9 @@ namespace Exam_Library.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -268,7 +283,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 1,
                             Cost = 520m,
                             Count = 10,
-                            Description = "Neil Josten is the newest addition to the Palmetto State University Exy team. He's short, he's fast, he's got a ton of potential — and he's the runaway son of the murderous crime lord known as The Butcher. Signing a contract with the PSU Foxes is the last thing a guy like Neil should do.",
+                            Description = "Neil Josten is the newest addition to the Palmetto State University Exy team.",
                             Genre = "Young Adult",
                             HasDiscount = false,
                             IsSequel = false,
@@ -277,6 +292,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 260,
                             Price = 570m,
                             Publisher = "Nora Sakavic",
+                            Rating = 5,
                             Status = "Available",
                             Year = 2013
                         },
@@ -295,6 +311,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 432,
                             Price = 670m,
                             Publisher = "Nora Sakavic",
+                            Rating = 4,
                             Status = "Available",
                             Year = 2013
                         },
@@ -304,7 +321,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 1,
                             Cost = 640m,
                             Count = 1,
-                            Description = "Neil Josten is out of time. He knew when he came to PSU he wouldn't survive the year, but with his death right around the corner he's got more reasons than ever to live. Befriending the Foxes was inadvisable. Kissing one is unthinkable. Neil should know better than to get involved with anyone this close to the end, but Andrew's never been the easiest person to walk away from. ",
+                            Description = "He knew when he came to PSU he wouldn't survive the year, but with his death right around the corner he's got more reasons than ever to live. ",
                             Genre = "Contemporary literature",
                             HasDiscount = false,
                             IsSequel = true,
@@ -313,6 +330,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 448,
                             Price = 750m,
                             Publisher = "Nora Sakavic",
+                            Rating = 8,
                             Status = "Reserved",
                             Year = 2014
                         },
@@ -322,7 +340,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 1,
                             Cost = 630m,
                             Count = 0,
-                            Description = "It is a truth Jean has built his life around, a reminder this is the best he can hope for and all he deserves. But when he is stolen from Edgar Allan University and sold to a more dangerous master, Jean is forced to contend with a life outside of the Nest for the first time in five years. ",
+                            Description = "It is a truth Jean has built his life around, a reminder this is the best he can hope for and all he deserves.",
                             Genre = "Contemporary literature",
                             HasDiscount = false,
                             IsSequel = false,
@@ -331,6 +349,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 330,
                             Price = 630m,
                             Publisher = "Nora Sakavic",
+                            Rating = 4,
                             Status = "Sold",
                             Year = 2024
                         },
@@ -340,7 +359,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 2,
                             Cost = 550m,
                             Count = 15,
-                            Description = "\"I see you are interested in the dark\" is a story about impenetrable human indifference and the darkness within us. About being honest with ourselves and the price we are willing to pay for forgetting. About sins that materialize and atonement, more expensive than peace.",
+                            Description = "\"I see you are interested in the dark\" is a story about impenetrable human indifference and the darkness within us",
                             Genre = "Fiction",
                             HasDiscount = false,
                             IsSequel = false,
@@ -349,6 +368,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 664,
                             Price = 550m,
                             Publisher = "Old Lion Publishing House",
+                            Rating = 9,
                             Status = "Available",
                             Year = 2022
                         },
@@ -358,7 +378,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 3,
                             Cost = 230m,
                             Count = 8,
-                            Description = "Zachary Ezra Rawlins is an ordinary student living on a university campus in Vermont. But somehow he gets his hands on a mysterious book from a dusty library shelf. Holding his breath, Zachary turns page after page, fascinated by the fate of unlucky lovers, when he comes across something completely unexpected - a story from his own childhood.",
+                            Description = "Zachary Ezra Rawlins is an ordinary student living on a university campus in Vermont.",
                             Genre = "Adventure novel",
                             HasDiscount = false,
                             IsSequel = false,
@@ -367,6 +387,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 554,
                             Price = 230m,
                             Publisher = "Vivat",
+                            Rating = 6,
                             Status = "Available",
                             Year = 2023
                         },
@@ -385,6 +406,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 272,
                             Price = 250m,
                             Publisher = "KSD",
+                            Rating = 5,
                             Status = "Available",
                             Year = 2024
                         },
@@ -394,7 +416,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 5,
                             Cost = 440m,
                             Count = 10,
-                            Description = "The narrator describes his family's trip to the fictional seaside town of Torre di Venere, where he encounters a magician and hypnotist named Cipolla. But the charismatic plasterer uses his own abilities to control the audience in a very brutal and fascist way.",
+                            Description = "The narrator describes his family's trip to the fictional seaside town of Torre di Venere, where he encounters a magician and hypnotist named Cipolla.",
                             Genre = "novel",
                             HasDiscount = true,
                             IsSequel = false,
@@ -403,6 +425,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 312,
                             Price = 440m,
                             Publisher = "Laboratory",
+                            Rating = 3,
                             Status = "Available",
                             Year = 1912
                         },
@@ -421,6 +444,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 272,
                             Price = 220m,
                             Publisher = "Educational book - Bohdan",
+                            Rating = 9,
                             Status = "Available",
                             Year = 1953
                         },
@@ -430,7 +454,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 7,
                             Cost = 400m,
                             Count = 20,
-                            Description = "Set in small-town Alabama, the novel is a bildungsroman, or coming-of-age story, and chronicles the childhood of Scout and Jem Finch as their father Atticus defends a Black man falsely accused of rape. ",
+                            Description = "Set in small-town Alabama, the novel is a bildungsroman and chronicles the childhood of Scout and Jem Finch as their father Atticus defends a Black man falsely accused of rape. ",
                             Genre = "Southern Gothic Bildungsroman",
                             HasDiscount = true,
                             IsSequel = false,
@@ -439,6 +463,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 384,
                             Price = 400m,
                             Publisher = "KM-BUKS",
+                            Rating = 8,
                             Status = "Available",
                             Year = 1960
                         },
@@ -448,7 +473,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 8,
                             Cost = 460m,
                             Count = 19,
-                            Description = "Jane describes herself as, \"poor, obscure, plain and little.\" Mr. Rochester once compliments Jane's \"hazel eyes and hazel hair\", but she informs the reader that Mr. Rochester was mistaken, as her eyes are not hazel; they are in fact green.",
+                            Description = "Jane describes herself as, \"poor, obscure, plain and little.\" Mr. Rochester once compliments Jane's \"hazel eyes and hazel hair\"",
                             Genre = "Gothic Bildungsroman Romance",
                             HasDiscount = true,
                             IsSequel = false,
@@ -457,6 +482,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 728,
                             Price = 460m,
                             Publisher = "Nebo Booklab Publishing",
+                            Rating = 7,
                             Status = "Available",
                             Year = 1847
                         },
@@ -466,7 +492,7 @@ namespace Exam_Library.Migrations
                             AuthorId = 9,
                             Cost = 390m,
                             Count = 17,
-                            Description = "The story tells about the events in the small town of Konotopi, where local officials, in particular the centurion Nikita Zabryokha and the clerk Pistryak, dive into the search for a witch. Because of superstitions, ignorance and intrigues, they get into funny situations. The main events revolve around false accusations of witchcraft and the consequences for the local people.",
+                            Description = "The story tells about the events in the small town of Konotop",
                             Genre = "Satirical story",
                             HasDiscount = true,
                             IsSequel = false,
@@ -475,6 +501,7 @@ namespace Exam_Library.Migrations
                             NumberOfPages = 524,
                             Price = 390m,
                             Publisher = "Vivat",
+                            Rating = 8,
                             Status = "Available",
                             Year = 1833
                         });
@@ -491,7 +518,17 @@ namespace Exam_Library.Migrations
                     b.Property<int>("LibraryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -512,63 +549,81 @@ namespace Exam_Library.Migrations
                         {
                             Id = 1,
                             LibraryId = 1,
+                            Login = "Turner_W",
                             Name = "Turner",
+                            Password = "123",
                             Surname = "Winifrede"
                         },
                         new
                         {
                             Id = 2,
                             LibraryId = 1,
+                            Login = "Lopez",
                             Name = "Lopez",
+                            Password = "123",
                             Surname = "Quintina"
                         },
                         new
                         {
                             Id = 3,
                             LibraryId = 1,
+                            Login = "Wuda",
                             Name = "White",
+                            Password = "123",
                             Surname = "Uda"
                         },
                         new
                         {
                             Id = 4,
                             LibraryId = 1,
+                            Login = "San_J",
                             Name = "Sanchez",
+                            Password = "123",
                             Surname = "Jonah"
                         },
                         new
                         {
                             Id = 5,
                             LibraryId = 1,
+                            Login = "Tom_Z",
                             Name = "Thomas",
+                            Password = "123",
                             Surname = "Zachery"
                         },
                         new
                         {
                             Id = 6,
                             LibraryId = 2,
+                            Login = "Foster",
                             Name = "Foster",
+                            Password = "123",
                             Surname = "Quartney"
                         },
                         new
                         {
                             Id = 7,
                             LibraryId = 2,
+                            Login = "Pelipe",
                             Name = "Perez",
+                            Password = "132",
                             Surname = "Felipe"
                         },
                         new
                         {
                             Id = 8,
                             LibraryId = 2,
+                            Login = "J_Isaias",
                             Name = "Jackson",
+                            Password = "123",
                             Surname = "Isaias"
                         },
                         new
                         {
                             Id = 9,
                             LibraryId = 2,
+                            Login = "G_Faris",
                             Name = "Garcia",
+                            Password = "123465789",
                             Surname = "Faris"
                         });
                 });
@@ -732,7 +787,7 @@ namespace Exam_Library.Migrations
                         {
                             Id = 1,
                             BookId = 1,
-                            ClientId = 0,
+                            ClientId = 1,
                             Quantity = 1,
                             SaleDate = new DateTime(2023, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             TotalPrice = 570m,
@@ -742,7 +797,7 @@ namespace Exam_Library.Migrations
                         {
                             Id = 2,
                             BookId = 5,
-                            ClientId = 0,
+                            ClientId = 2,
                             Quantity = 2,
                             SaleDate = new DateTime(2024, 8, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             TotalPrice = 1140m,
@@ -752,7 +807,7 @@ namespace Exam_Library.Migrations
                         {
                             Id = 3,
                             BookId = 4,
-                            ClientId = 0,
+                            ClientId = 3,
                             Quantity = 1,
                             SaleDate = new DateTime(2024, 7, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             TotalPrice = 630m,
@@ -762,7 +817,7 @@ namespace Exam_Library.Migrations
                         {
                             Id = 4,
                             BookId = 12,
-                            ClientId = 0,
+                            ClientId = 4,
                             Quantity = 3,
                             SaleDate = new DateTime(2024, 6, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             TotalPrice = 1170m,
@@ -772,7 +827,7 @@ namespace Exam_Library.Migrations
                         {
                             Id = 5,
                             BookId = 6,
-                            ClientId = 0,
+                            ClientId = 5,
                             Quantity = 1,
                             SaleDate = new DateTime(2024, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             TotalPrice = 230m,
@@ -782,7 +837,7 @@ namespace Exam_Library.Migrations
                         {
                             Id = 6,
                             BookId = 9,
-                            ClientId = 0,
+                            ClientId = 6,
                             Quantity = 1,
                             SaleDate = new DateTime(2024, 2, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             TotalPrice = 220m,
@@ -792,7 +847,7 @@ namespace Exam_Library.Migrations
                         {
                             Id = 7,
                             BookId = 8,
-                            ClientId = 0,
+                            ClientId = 7,
                             Quantity = 2,
                             SaleDate = new DateTime(2024, 1, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             TotalPrice = 880m,
@@ -811,10 +866,18 @@ namespace Exam_Library.Migrations
                     b.Property<int>("LibraryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Position")
                         .IsRequired()
@@ -840,7 +903,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 1,
                             LibraryId = 1,
+                            Login = "Kulumyk",
                             Name = "Sergay",
+                            Password = "123",
                             Position = "Seller",
                             Salary = 16000m,
                             Surname = "Kulumyk"
@@ -849,7 +914,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 2,
                             LibraryId = 1,
+                            Login = "Kvitka",
                             Name = "Olena",
+                            Password = "123",
                             Position = "Manager",
                             Salary = 26000m,
                             Surname = "Kvitka"
@@ -858,7 +925,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 3,
                             LibraryId = 2,
+                            Login = "Ivan",
                             Name = "Ivan",
+                            Password = "132",
                             Position = "Seller",
                             Salary = 20000m,
                             Surname = "Symonenko"
@@ -867,7 +936,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 4,
                             LibraryId = 1,
+                            Login = "Petro",
                             Name = "Petro",
+                            Password = "123",
                             Position = "Director",
                             Salary = 35000m,
                             Surname = "Vunograskiy"
@@ -876,7 +947,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 5,
                             LibraryId = 2,
+                            Login = "Socol",
                             Name = "Sveta",
+                            Password = "123",
                             Position = "Manager",
                             Salary = 28000m,
                             Surname = "Socol"
@@ -885,7 +958,9 @@ namespace Exam_Library.Migrations
                         {
                             Id = 6,
                             LibraryId = 1,
+                            Login = "Andriy",
                             Name = "Andriy",
+                            Password = "123",
                             Position = "Director",
                             Salary = 37000m,
                             Surname = "Petlura"
@@ -927,13 +1002,13 @@ namespace Exam_Library.Migrations
                     b.HasOne("Exam_Library.Entities.Author", "Author")
                         .WithMany("Books")
                         .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Exam_Library.Entities.Library", "Library")
                         .WithMany("Books")
                         .HasForeignKey("LibraryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Author");
@@ -946,7 +1021,7 @@ namespace Exam_Library.Migrations
                     b.HasOne("Exam_Library.Entities.Library", "Library")
                         .WithMany("Clients")
                         .HasForeignKey("LibraryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Library");
@@ -957,13 +1032,13 @@ namespace Exam_Library.Migrations
                     b.HasOne("Exam_Library.Entities.Book", "Book")
                         .WithMany("Reserveds")
                         .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Exam_Library.Entities.Client", "Client")
                         .WithMany("Reserved")
                         .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Book");
@@ -976,19 +1051,19 @@ namespace Exam_Library.Migrations
                     b.HasOne("Exam_Library.Entities.Book", "Book")
                         .WithMany("Sales")
                         .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Exam_Library.Entities.Client", "Client")
                         .WithMany("Sales")
                         .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Exam_Library.Entities.Worker", "Worker")
                         .WithMany("Sales")
                         .HasForeignKey("WorkerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Book");
@@ -1003,7 +1078,7 @@ namespace Exam_Library.Migrations
                     b.HasOne("Exam_Library.Entities.Library", "Library")
                         .WithMany("Workers")
                         .HasForeignKey("LibraryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Library");

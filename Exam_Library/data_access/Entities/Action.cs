@@ -13,6 +13,6 @@ namespace Exam_Library.Entities
         public DateTime DataStart { get; set; }
         public DateTime DataEnd { get; set; }
         public float DiscountPercentage {  get; set; }
-        public ICollection<Book> Books { get; set; }
+        public ICollection<Book> Books { get; set; } = new List<Book>();
     }
 }

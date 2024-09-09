@@ -111,6 +111,9 @@ namespace Exam_Library
             modelBuilder.Entity<Book>()
                 .Property(c => c.Count)
                 .IsRequired();
+            modelBuilder.Entity<Book>()
+                .Property(a=>a.Rating)
+                .IsRequired();
 
             // client
             modelBuilder.Entity<Client>()
@@ -119,6 +122,14 @@ namespace Exam_Library
                 .IsRequired();
             modelBuilder.Entity<Client>()
                 .Property(a => a.Surname)
+                .HasMaxLength(50)
+                .IsRequired();
+            modelBuilder.Entity<Client>()
+                .Property(a=>a.Login)
+                .HasMaxLength(50)
+                .IsRequired();
+            modelBuilder.Entity<Client>()
+                .Property(a => a.Password)
                 .HasMaxLength(50)
                 .IsRequired();
 
